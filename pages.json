@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{//消息页
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{//列表页
+			"path": "pages/list/list",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{//朋友圈页
+			"path": "pages/friends/friends",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{//设置页
+			"path": "pages/set/set",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"tabBar": {
+			"backgroundColor":"#F6F8F9",
+			"color": "#000000",
+			"selectedColor": "#007AFF",
+			"borderStyle": "white",
+			"fontSize": "11px",
+			"height": "55px",
+			"list":[
+					{
+						"pagePath":"pages/home/home",//页面路径  第一个tabbar
+						"text":"飞鸽传书",// tabbar的按钮文字
+						"iconPath":"./static/TabBar/icon1.png",//未选中时的图标
+						"selectedIconPath":"./static/TabBar/SelectedIcon1.png"//选中时的图标
+					},
+					{
+						"pagePath":"pages/list/list",
+						"text":"通讯列表",
+						"iconPath":"./static/TabBar/icon2.png",
+						"selectedIconPath":"./static/TabBar/SelectedIcon2.png"
+					},
+					{
+						"pagePath":"pages/friends/friends",
+						"text":"朋友圈",
+						"iconPath":"./static/TabBar/icon3.png",
+						"selectedIconPath":"./static/TabBar/SelectedIcon3.png"
+					},
+					{
+						"pagePath":"pages/set/set",
+						"text":"设置",
+						"iconPath":"./static/TabBar/icon4.png",
+						"selectedIconPath":"./static/TabBar/SelectedIcon4.png"
+					}
+				]
+
+		}
+	
+	// "globalStyle": {
+	// 	"navigationBarTextStyle": "black",
+	// 	"navigationBarTitleText": "uni-app",
+	// 	"navigationBarBackgroundColor": "#F6F8F9",
+	// 	"backgroundColor": "#F8F8F8"
+	// }
+}
